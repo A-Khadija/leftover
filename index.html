@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leftover</title>
+
+  <link rel="stylesheet" href="index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+  rel="stylesheet">
+
+
+  
+
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+       Leftover<span class="span">.</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Comment ça marche ?</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#sponsors" class="navbar-link" data-nav-link> Nos Partenaires</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="btn btn-primary" Onclick="window.location.href = 'signin.html';">S'authentifier</button>
+
+      <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home" data-section
+        style="background-image: url('images/hero-banner.jpg')">
+        <div class="container">
+
+          <p class="hero-subtitle">Ensemble pour </p>
+
+          <h1 class="h1 hero-title">Un monde sans gaspillage alimentaire</h1>
+
+          <p class="hero-text">
+            Découvrez le gaspillage alimentaire dans le monde, ses effets et ses causes.
+          </p>
+
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
+
+        </div>
+      </section>
+
+
+    <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Notre Mission?</p>
+
+            <p class="hero-text">Un tiers de la nourriture mondiale produite pour la consommation humaine est GASPILLÉE.</p>
+            <p class="about-subtitle">NOUS VOULONS CHANGER CELA</p>
+            <p class="section-text">
+              Faire en sorte que les bons aliments soient consommés et non gaspillés. 
+              Chaque jour, des aliments frais et délicieux sont gaspillés dans des cafés, des restaurants,des hôtels, 
+              des magasins et des usines - simplement parce qu'ils n'ont pas été vendus à temps .
+            </p>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="images/Screenshot_120.png" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+ 
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="images/Screenshot_123-removebg-preview.png" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+ 
+          </figure>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-label="service" data-section id="service">
+        <div class="container">
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/172496_location_icon.png" width="60" height="60" loading="lazy" alt="Women’s Course">
+                </div>
+
+                <h3 class="hero-subtitle" id="decouvre">
+                  Découvrez
+                </h3>
+
+                <p class="card-text">
+                  des aliments délicieux à prix réduits autour de vous  </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card active">
+
+                <div class="card-icon">
+                  <img src="images/icons8-paper-bag-64(3).png" width="60" height="60" loading="lazy" alt="Basic Course">
+                </div>
+
+                <h3 class="hero-subtitle">
+                  Pick-up               
+                 </h3>
+
+                <p class="card-text">
+                  des aliments délicieux provenant de magasins situés à proximité        
+                 </p>
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <img src="images/icons8-restaurant-64(1).png" width="60" height="60" loading="lazy" alt="Men’s Course">
+                </div>
+
+                <h3 class="hero-subtitle" id="profit">
+                  Profitez                
+                 </h3>
+
+                <p class="card-text">
+                  d'un repas savoureux qui aide la planète   
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+     <!-- 
+        - #areyouready
+      -->
+
+      <section class="section section-divider white cta" style="background-image: url('images/Screenshot_130.png')" >
+        <div class="container">
+
+          <div class="cta-content">
+
+            <h2 class="title">
+              Etes-vous prêt ?
+            </h2>
+
+            <p class="section-text">
+              pour faire partie de la communauté et  économiser de la nourriture délicieuse.
+              notre site web vous permet de récupérer des aliments délicieux et invendus 
+              auprès des entreprises pour éviter qu'ils ne soient jetés.
+            </p>
+
+            <button class="btn btn-primary">S'inscrire</button>
+          </div>
+          <figure class="cta-banner">
+            <img src="images/Screenshot_141-removebg-preview.png" width="600" height="507" loading="lazy" alt="Burger"
+              class="w-100 cta-img">
+          </figure>
+
+        </div>
+      </section>
+
+     <!-- 
+        - #businessowner
+      -->
+
+      <section class="section section-divider gray delivery">
+        <div class="container">
+          
+          <div class="delivery-content">
+
+            <h2 class="title">
+              Faites partie de la solution       
+             </h2>
+
+            <p class="section-text">
+                Votre entreprise dispose-t-elle d'un surplus de nourriture ?
+                Nous pouvons vous aider à réduire le gaspillage alimentaire tout 
+                en trouvant de nouveaux clients et en récupérant les coûts irrécupérables.
+            </p>
+
+            <button class="btn btn-secondary">Rejoignez-nous </button>
+          </div>
+
+          <figure class="delivery-banner">
+            <img src="images/Screenshot_142-removebg-preview.png" width="700" height="602" loading="lazy" alt="clouds"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+     <!-- 
+        - #sponsors
+      -->
+      <section class="section brand" aria-label="brand" id="sponsors">
+        <div class="container">
+
+          <h2 class="title">
+            Nos partenaires
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width:150; --height:150;">
+                <img src="images/Screenshot_99-removebg-preview.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="images/starbucks-coffe-logo-hd-image-15.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="images/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="images/Screenshot_98-removebg-preview.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="brand-card img-holder" style="--width: 150; --height: 150;">
+                <img src="images/Screenshot_101-removebg-preview.png" width="150" height="150" loading="lazy" alt="brand logo"
+                  class="img-cover">
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+  </main>
+   <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+             Leftover<span class="span">.</span>
+          </a>
+          <p class="footer-text">
+            Nous aidons à rendre le monde meilleur, où la bonne nourriture va aux humains plutôt qu'à la poubelle.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              
+              <span class="span">Accueil</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+            
+              <span class="span">À propos</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+             
+              <span class="span">Comment ça marche ?</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Nos partenaires</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              
+
+              <span class="span">S'authentifier</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liens Utiles</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">Conditions de service</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Confidentialité et Politique</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Support</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Details</p>
+          </li>
+
+          <li class="footer-item">
+          
+            <address class="address">
+              C/54 Northwest Freeway,<br>
+              Suite 558,<br>
+              Houston, USA 485
+              <a href="#" class="address-link"> Voir on Google Map</a>
+            </address>
+          </li>
+
+          <li class="footer-item">
+           
+            <a href="mailto:contact@example.com" class="footer-link">Leftover@example.com</a>
+          </li>
+
+          <li class="footer-item">
+            <a href="tel:+152534468854" class="footer-link">+152 534-468-854</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Leftover. All Right Reserved by <a href="#" class="copyright-link">GreenPlanet</a>.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+ 
+
+  <script src="index.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
