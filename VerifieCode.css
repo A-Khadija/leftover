@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ 
+}
+:root{
+ --primaryColor:
+                   #ad91cf;
+ --secondaryColor:
+                     rgb(196, 169, 230);
+ --blackColor:
+                 rgb(46, 46, 71);
+ --borderColor:
+                  rgb(46, 46, 71);
+ --inputColor: Orgb(241, 241, 241);
+ --successColor:
+                green;
+ --failureColor:
+                   rgb(255, 0, 9);
+}
+html{
+    font-size: 90%;
+}
+body{
+    background-image: url('images/hero-banner.jpg') ;
+    background-size: cover;
+
+}
+   .form_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px rgb(110, 110, 110,.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff-montserrat);
+    padding-bottom: 10px;
+    padding-top: 45px;
+   }  
+    .overlay{
+        background-color:rgb(243, 228, 236);
+        position: absolute;
+        background: white;
+        content: '';
+        height: 500px;
+        width: 500px;
+        border-radius: 50px;
+        z-index: 2;
+        top: -20%;
+
+    }
+    .titleDiv{
+        position: relative;
+        width: 100%;
+        font-family: var(--ff-montserrat);
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom:10px;
+        text-align: center;
+        transform: translateY(-3rem);
+        z-index: 1000;
+    }
+    .title{
+        color: var(--black-chocolate);
+        font-size: 30px;
+        line-height: 1;
+        font-weight: var(--fw-700);
+        font-family:var(--ff-montserrat) ;
+    }
+    .rows{
+        display: grid;
+        position: relative;
+        gap: 1rem;
+        z-index:1000 ;
+        transform: translateY(-1rem);
+        padding-bottom: 0.2rem;
+       
+    }
+    .rows label{
+           
+    position: relative;
+    top: 0;
+           
+    }
+    .rows input{
+    position: relative;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 4px;
+    padding-left: 10px;
+    }
+    .row input{
+        position: relative;
+        width: 300px;
+        height: 35px;
+        outline: none;
+        border: 1px solid rgb(211, 210, 210);
+        border-radius: 4px;
+        padding-left: 10px;
+        }
+   ::placeholder{
+    font-size: 0.9rem;
+   }   
+   #submitBtn{
+    margin-top: 1rem;
+    background:rgb(14, 106, 6) ;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+   }
+   #submitBtn:hover{
+    background:rgb(255, 255, 255);
+    color: black;
+    border: 1px  rgb(0, 127, 9) solid;
+    border-radius: 10px;
+   }
+   .registerLink{
+    display: block;
+    font-size: 13px;
+    color: rgb(0, 99, 12);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-left: 10px;
+   }
+   .registerLink a{
+    text-decoration: none;
+    cursor: pointer;
+   }
+   a{
+    color: rgb(3, 4, 4);
+   }
+.success{
+    text-align: center;
+    position: relative;
+    z-index: 1000;
+    color: green;
+    top: -7%;
+}
+.fail{
+    position: relative;
+    z-index: 1000;
+    color: red;
+    top: -7%;
+}
