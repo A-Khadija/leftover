@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+   <script src="{% static 'network/functions.js' %}"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+
+    <input type="checkbox" id="cart">
+     <label for="cart"  class="label-cart"><span class="fa fa-shopping-cart"></span>
+    </label>
+
+   
+    <h3 class="logo">
+        Leftover<span class="span">•</span>
+    </h3>
+
+
+
+  <!-- sidebar-->
+  <div class="sidebar">
+    
+    <div class="sidebar-menu">
+        <span class="fa fa-home"></span>
+        <a href="#">Acceuil</a>
+    </div>
+    <div class="sidebar-menu">
+        <span class="fa fa-search"></span>
+        <a href="#">Recherche</a>
+    </div>
+    <div class="sidebar-menu">
+        <span class="fa fa-heart"></span>
+        <a href="#">favouris</a>
+    </div>
+    <div class="sidebar-menu">
+        
+        <span class="fa fa-user"></span>
+        <a href="#">Profile</a>
+    </div>
+    <div class="sidebar-menu">
+        <span class="fa fa-sliders"></span>
+        <a href="#">Parametre</a>
+    </div>
+</div>
+    <!-- maindashboard-->
+    <div class="dashboard">
+        <div class="dashboard-banner">
+            <img src="images/image3.jpg" >
+            <div class="image7-writing">
+                <h1><span>50% OFF</span><br>
+                     Pour  Un Monde  <br>Sans Gasspiyage </h1>
+
+            </div>
+        </div>
+        <h3 class="dashbord-title">Recommandé Pour Vous</h3>
+        <div class="dashboard-menu">
+            <a href="#">Favoris</a>
+            <a href="#">Meilleur Vendeur</a>
+            <a href="#">Près de Moi</a>
+            <a href="#">Promotion</a>
+            <a href="#">Tous</a>
+        </div>
+
+        <div class="dashbord-content">
+            <div class="dashboard-cart">
+               
+                <img class="cart-image" src="images/image17.jpg">
+                 
+                <div class="card"><div class="h_container">
+                    <i id="heart" class="far fa-heart"></i>
+              </div> <img src="images/logo1.png" alt="" class="dis"> </div>
+                  <div class="cart-detail">
+                  <h2>Mister Cook</h2>
+                    <h4>Surpise Bag<span>15.99DH</span></h4>
+                    <p class="cart-time"><span class="fa fa-clock-o">
+                    </span>récupérer aujourd'hui : 15:30 -19:00</p>
+                </div>
+</div>
+                <div class="dashboard-cart"><img class="cart-image" src="images/image16.jpg">
+                    <div class="card">
+                        <div class="h_container">
+                            <i id="heart" class="far fa-heart"></i></div> <img src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png" alt="" class="dis"> </div>
+                    
+                    <div class="cart-detail">
+                        <h2>Mc Donald's</h2>
+                        <h4>Surprise Bag<span>18.99DH</span></h4>
+                        <p class="cart-time"><span class="fa fa-clock-o">
+                        </span>récupérer demain : 12:30 -14:00</p>
+                    </div>
+                </div>
+                    <div class="dashboard-cart">
+                        <img class="cart-image" src="images/image12.jpg">
+                         <div class="card">
+                            <div class="h_container">
+                                <i id="heart" class="far fa-heart"></i></div> <img src="images/logo3.png" alt="" class="dis"> </div>
+                        <div class="cart-detail">
+                            <h2>Dar Chouaia</h2>
+                            <h4>Surprise Bag<span>8.99DH</span></h4>
+                            <p class="cart-time"><span class="fa fa-clock-o">
+                            </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                        </div>
+                    </div>
+                        <div class="dashboard-cart">
+                            <img class="cart-image" src="images/kaitlin-dowis-VjM2t7VH9Uo-unsplash.jpg">
+                            <div class="card">
+                                <div class="h_container">
+                                    <i id="heart" class="far fa-heart"></i></div>
+                                     <img src="images/logo4.png" alt="" class="dis"> </div>
+                            <div class="cart-detail">
+                                <h2>Le Petit Pecheur</h2>
+                                <h4>Surprise Bag<span>8.99DH</span></h4>
+                                <p class="cart-time"><span class="fa fa-clock-o">
+                                </span>récupérer demain : 12:30 -14:00</p>
+                            </div>
+                        </div>
+                            <div class="dashboard-cart">
+                                <img class="cart-image" src="images/elisheva-gohar-nyekPQwZbgw-unsplash.jpg">
+                                <div class="card"> 
+                                    <div class="h_container">
+                                        <i id="heart" class="far fa-heart"></i></div>
+                                        <img src="images/logo2.png" alt="" class="dis"> </div>
+                                <div class="cart-detail">
+                                    <h2>Le Sesame Patisserie</h2>
+                                    <h4>Surprise Bag<span>8.99DH</span></h4>
+                                    <p class="cart-time"><span class="fa fa-clock-o">
+                                    </span>récupérer demain : 12:30 -14:00</p>
+                                </div>
+                            </div>
+                                <div class="dashboard-cart">
+                                    <img class="cart-image" src="images/120904083_129764615542915_2123990694166447632_n.jpg">
+                                    <div class="card"> 
+                                        <div class="h_container">
+                                            <i id="heart" class="far fa-heart"></i></div>
+                                            <img src="images/logo7.png" alt="" class="dis"> </div>
+                                    <div class="cart-detail">
+                                        <h2>KFS</h2>
+                                        <h4>Surprise Bag<span>8.99DH</span></h4>
+                                        <p class="cart-time"><span class="fa fa-clock-o">
+                                        </span>récupérer demain : 12:30 -14:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="dashboard-cart">
+                                    <img class="cart-image" src="images/image12.jpg">
+                                    <div class="card"> 
+                                        <div class="h_container">
+                                            <i id="heart" class="far fa-heart"></i></div>
+                                            <img src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png" alt="" class="dis"> </div>
+                                    <div class="cart-detail">
+                                        <h2>Mister Cook</h2>
+                                        <h4>Surprise Bag<span>8.99DH</span></h4>
+                                        <p class="cart-time"><span class="fa fa-clock-o">
+                                        </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard-cart">
+                                    <img class="cart-image" src="images/image13.jpg">
+                                    <div class="card">
+                                        <div class="h_container">
+                                            <i id="heart" class="far fa-heart"></i></div>
+                                             <img src="images/logo5.png" alt="" class="dis"> </div>
+                                    <div class="cart-detail">
+                                        <h2>Mister Cook</h2>
+                                        <h4>Surprise Bag<span>8.99DH</span></h4>
+                                        <p class="cart-time"><span class="fa fa-clock-o">
+                                        </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard-cart">
+                                    <img class="cart-image" src="images/image14.jpg">
+                                    <div class="card"> <div class="h_container">
+                                        <i id="heart" class="fas fa-heart"></i></div>
+                                        <img src="images/logo6.png" alt="" class="dis"> </div>
+                                    <div class="cart-detail">
+                                        <h2>Frunk's Burgers</h2>
+                                        <h4>Surprise Bag<span>8.99DH</span></h4>
+                                        <p class="cart-time"><span class="fa fa-clock-o">
+                                        </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                    </div>
+                                </div>
+                                <div class="dashboard-cart">
+                                    <img class="cart-image" src="images/image15.jpg">
+                                    <div class="card"> <div class="h_container">
+                                        <i id="heart" class="far fa-heart"></i></div>
+                                        <img src="images/logo8.png" alt="" class="dis"> </div>
+                                    <div class="cart-detail">
+                                        <h2>Fresh Mania</h2>
+                                        <h4>Surprise Bag<span>8.99DH</span></h4>
+                                        <p class="cart-time"><span class="fa fa-clock-o">
+                                        </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                    </div>
+                                </div> 
+                           </div>
+                                 <!-- dashboard favouris-->
+                                
+                        
+                   <!-- dashboard order-->              
+                   <div class="dashboard-order">
+                    <h3>Order Menu</h3>
+                    <div class="dashboard-adresse">
+                        <p> localisation </p>
+                        <h4> agadir, 20380, Morocco</h4>
+                    </div>
+                    <div class="dashboard-time">
+                        <span class="fa fa-clock-o"></span> 30 min <span class="fa fa-map-marker"> 2 Km </span>
+
+                    </div>
+                        <div class="order-wrapper">
+                            <div class="order-cart">
+                               
+                                <img class="order-image"  src="images/logo3.png">
+                                <div class="order-detail">
+                                    <p>Dar Chouaia</p>
+                                    <span>Surprise Bag récupérer demain : 12:30 -14:00</span>  <p></p>
+                                    <i class="fa fa-trash"></i> <input type="text" value="1">
+                                </div>  
+                                <h4 class="order-price" >$3</h4>
+                            </div>
+
+
+                            <div class="order-cart">
+                                <img class="order-image" src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png">
+                               
+                                <div class="order-detail">
+                                    <p>Dar Chouaia</p>
+                                     <span>Surprise Bag récupérer demain : 12:30 -14:00</span> 
+                                     <p></p>
+                                    <i class="fa fa-trash"></i> <input type="text" value="1">
+                                </div>  
+                                <h4 class="order-price" > $3 </h4>
+                            </div>
+
+                            <div class="order-cart">
+                                <img class="order-image"  src="images/logo2.png">
+                                <div class="order-detail">
+                                    <p>Dar Chouaia</p>
+                                    <span>Surprise Bag récupérer demain : 12:30 -14:00</span> <p></p>
+                                    
+                                    <i class="fa fa-trash"></i> <input type="text" value="1">
+                                </div>  
+                                <h4 class="order-price" > $3 </h4>
+                            </div>
+
+        </div> 
+        <hr class="divider">
+        <div class="order-total">
+            <p>Subtotal<span>156.00 DH</span></p>
+            <p>Tax (10%) <span>15.80 DH</span></p>
+            <p>Promotion (5%) <span>10.80 DH</span></p>
+            <div  class="order-promo">
+                <input class="input-promo" type="text" placeholder="Apply Voucher">
+                <button class="button-promo">Find Promo</button>
+            </div>
+
+            <hr class="divider">
+            <p>Total <span>$176.6</span></p>
+        </div>
+        <button class="checkout">
+            checkout
+        </button>
+    </div>
+
+
+
+
+</body>
+</html>
