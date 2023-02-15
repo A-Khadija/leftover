@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
     <title>Food Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="client.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
    <script src="{% static 'network/functions.js' %}"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<script src="client.js" defer></script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
 </head>
@@ -19,12 +25,10 @@
     <!-- header -->
 
     <input type="checkbox" id="cart">
-     <label for="cart"  class="label-cart"><span class="fa fa-shopping-cart"></span>
-    </label>
+     <label for="cart"  class="label-cart"><span class="fas fa-shopping-cart"></span></label>
 
    
-    <h3 class="logo">
-        Leftover<span class="span">•</span>
+    <h3 class="logo">Leftover<span class="span">•</span>
     </h3>
 
 
@@ -54,8 +58,11 @@
         <a href="#">Parametre</a>
     </div>
 </div>
+
     <!-- maindashboard-->
     <div class="dashboard">
+        <input type="checkbox" id="cart">
+        
         <div class="dashboard-banner">
             <img src="images/image3.jpg" >
             <div class="image7-writing">
@@ -78,9 +85,13 @@
                
                 <img class="cart-image" src="images/image17.jpg">
                  
-                <div class="card"><div class="h_container">
-                    <i id="heart" class="far fa-heart"></i>
-              </div> <img src="images/logo1.png" alt="" class="dis"> </div>
+                <div class="card"> 
+                    <div class="heart" onclick="ShowHeart()">
+                    <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                 <i class="far fa-heart" id="hide2"></i>
+              </div>
+              
+              <img src="images/logo1.png" alt="" class="dis"> </div>
                   <div class="cart-detail">
                   <h2>Mister Cook</h2>
                     <h4>Surpise Bag<span>15.99DH</span></h4>
@@ -90,8 +101,11 @@
 </div>
                 <div class="dashboard-cart"><img class="cart-image" src="images/image16.jpg">
                     <div class="card">
-                        <div class="h_container">
-                            <i id="heart" class="far fa-heart"></i></div> <img src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png" alt="" class="dis"> </div>
+                        <div class="heart" onclick="ShowHeart()">
+                            <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                         <i class="far fa-heart" id="hide2"></i>
+                     </div>
+                      <img src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png" alt="" class="dis"> </div>
                     
                     <div class="cart-detail">
                         <h2>Mc Donald's</h2>
@@ -100,11 +114,16 @@
                         </span>récupérer demain : 12:30 -14:00</p>
                     </div>
                 </div>
+
                     <div class="dashboard-cart">
                         <img class="cart-image" src="images/image12.jpg">
                          <div class="card">
-                            <div class="h_container">
-                                <i id="heart" class="far fa-heart"></i></div> <img src="images/logo3.png" alt="" class="dis"> </div>
+                            <div class="heart" onclick="ShowHeart()">
+                                <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                             <i class="far fa-heart" id="hide2"></i>
+                         </div>
+                         
+                         <img src="images/logo3.png" alt="" class="dis"> </div>
                         <div class="cart-detail">
                             <h2>Dar Chouaia</h2>
                             <h4>Surprise Bag<span>8.99DH</span></h4>
@@ -115,8 +134,10 @@
                         <div class="dashboard-cart">
                             <img class="cart-image" src="images/kaitlin-dowis-VjM2t7VH9Uo-unsplash.jpg">
                             <div class="card">
-                                <div class="h_container">
-                                    <i id="heart" class="far fa-heart"></i></div>
+                                <div class="heart" onclick="ShowHeart()">
+                                    <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                 <i class="far fa-heart" id="hide2"></i>
+                             </div>
                                      <img src="images/logo4.png" alt="" class="dis"> </div>
                             <div class="cart-detail">
                                 <h2>Le Petit Pecheur</h2>
@@ -128,8 +149,10 @@
                             <div class="dashboard-cart">
                                 <img class="cart-image" src="images/elisheva-gohar-nyekPQwZbgw-unsplash.jpg">
                                 <div class="card"> 
-                                    <div class="h_container">
-                                        <i id="heart" class="far fa-heart"></i></div>
+                                    <div class="heart" onclick="ShowHeart()">
+                                        <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                     <i class="far fa-heart" id="hide2"></i>
+                                 </div>
                                         <img src="images/logo2.png" alt="" class="dis"> </div>
                                 <div class="cart-detail">
                                     <h2>Le Sesame Patisserie</h2>
@@ -141,8 +164,10 @@
                                 <div class="dashboard-cart">
                                     <img class="cart-image" src="images/120904083_129764615542915_2123990694166447632_n.jpg">
                                     <div class="card"> 
-                                        <div class="h_container">
-                                            <i id="heart" class="far fa-heart"></i></div>
+                                        <div class="heart" onclick="ShowHeart()">
+                                            <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                         <i class="far fa-heart" id="hide2"></i>
+                                     </div>
                                             <img src="images/logo7.png" alt="" class="dis"> </div>
                                     <div class="cart-detail">
                                         <h2>KFS</h2>
@@ -155,8 +180,10 @@
                                 <div class="dashboard-cart">
                                     <img class="cart-image" src="images/image12.jpg">
                                     <div class="card"> 
-                                        <div class="h_container">
-                                            <i id="heart" class="far fa-heart"></i></div>
+                                        <div class="heart" onclick="ShowHeart()">
+                                            <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                         <i class="far fa-heart" id="hide2"></i>
+                                     </div>
                                             <img src="images/McDonalds-Logo__1_-modified-removebg-preview (1).png" alt="" class="dis"> </div>
                                     <div class="cart-detail">
                                         <h2>Mister Cook</h2>
@@ -165,23 +192,14 @@
                                         </span>récupérer aujourd'hui: 12:30 -14:00</p>
                                     </div>
                                 </div>
-                                <div class="dashboard-cart">
-                                    <img class="cart-image" src="images/image13.jpg">
-                                    <div class="card">
-                                        <div class="h_container">
-                                            <i id="heart" class="far fa-heart"></i></div>
-                                             <img src="images/logo5.png" alt="" class="dis"> </div>
-                                    <div class="cart-detail">
-                                        <h2>Mister Cook</h2>
-                                        <h4>Surprise Bag<span>8.99DH</span></h4>
-                                        <p class="cart-time"><span class="fa fa-clock-o">
-                                        </span>récupérer aujourd'hui: 12:30 -14:00</p>
-                                    </div>
-                                </div>
+                               
                                 <div class="dashboard-cart">
                                     <img class="cart-image" src="images/image14.jpg">
-                                    <div class="card"> <div class="h_container">
-                                        <i id="heart" class="fas fa-heart"></i></div>
+                                    <div class="card">  
+                                       <div class="heart" onclick="ShowHeart()">
+                                           <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                        <i class="far fa-heart" id="hide2"></i>
+                                    </div>
                                         <img src="images/logo6.png" alt="" class="dis"> </div>
                                     <div class="cart-detail">
                                         <h2>Frunk's Burgers</h2>
@@ -192,8 +210,12 @@
                                 </div>
                                 <div class="dashboard-cart">
                                     <img class="cart-image" src="images/image15.jpg">
-                                    <div class="card"> <div class="h_container">
-                                        <i id="heart" class="far fa-heart"></i></div>
+                                    <div class="card">
+
+                                        <div class="heart" onclick="ShowHeart()">
+                                            <span> <i class="fa fa-heart" id="hide1" ></i></span>
+                                         <i class="far fa-heart" id="hide2"></i>
+                                     </div>
                                         <img src="images/logo8.png" alt="" class="dis"> </div>
                                     <div class="cart-detail">
                                         <h2>Fresh Mania</h2>
@@ -203,9 +225,93 @@
                                     </div>
                                 </div> 
                            </div>
-                                 <!-- dashboard favouris-->
-                                
+
+
+                       
+                            <!-- favourisdashboard-->
+
+                          <h3 class="favouris-title">Favouris</h3>
+                           <div class="dashbord-favouris">
+                            
+                            <div class="favouris-cart">
+                                <img class="cart-image" src="images/image15.jpg">
+                                <div class="card">
+
+                                    <div class="heart" onclick="HideHeart()">
+                                        <span> <i class="fa fa-heart" id="hide2" ></i></span>
+                                     <i class="far fa-heart" id="hide1"></i>
+                                 </div>
+                                    <img src="images/logo8.png" alt="" class="dis"> </div>
+                                <div class="cart-detail">
+                                    <h2>Fresh Mania</h2>
+                                    <h4>Surprise Bag<span>8.99DH</span></h4>
+                                    <p class="cart-time"><span class="fa fa-clock-o">
+                                    </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                </div>  
+                            </div>
+
+                            <div class="favouris-cart">
+                                <img class="cart-image" src="images/image12.jpg">
+                                 <div class="card">
+                                    <div class="heart" onclick="HideHeart()">
+                                        <span> <i class="fa fa-heart" id="hide2" ></i></span>
+                                     <i class="far fa-heart" id="hide1"></i>
+                                 </div>
+                                 
+                                 <img src="images/logo3.png" alt="" class="dis"> </div>
+                                <div class="cart-detail">
+                                    <h2>Dar Chouaia</h2>
+                                    <h4>Surprise Bag<span>8.99DH</span></h4>
+                                    <p class="cart-time"><span class="fa fa-clock-o">
+                                    </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                </div>
+                            </div>
+
+
+                            <div class="favouris-cart">
+                                <img class="cart-image" src="images/image15.jpg">
+                                <div class="card">
+
+                                    <div class="heart" onclick="HideHeart()">
+                                        <span> <i class="fa fa-heart" id="hide2" ></i></span>
+                                     <i class="far fa-heart" id="hide1"></i>
+                                 </div>
+                                    <img src="images/logo8.png" alt="" class="dis"> </div>
+                                <div class="cart-detail">
+                                    <h2>Fresh Mania</h2>
+                                    <h4>Surprise Bag<span>8.99DH</span></h4>
+                                    <p class="cart-time"><span class="fa fa-clock-o">
+                                    </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                </div>  
+                            </div>
+
+                            
+                               <div class="favouris-cart">
+                                <img class="cart-image" src="images/image15.jpg">
+                                <div class="card">
+
+                                    <div class="heart" onclick="HideHeart()">
+                                        <span> <i class="fa fa-heart" id="hide2" ></i></span>
+                                     <i class="far fa-heart" id="hide1"></i>
+                                 </div>
+                                    <img src="images/logo8.png" alt="" class="dis"> </div>
+                                <div class="cart-detail">
+                                    <h2>Fresh Mania</h2>
+                                    <h4>Surprise Bag<span>8.99DH</span></h4>
+                                    <p class="cart-time"><span class="fa fa-clock-o">
+                                    </span>récupérer aujourd'hui: 12:30 -14:00</p>
+                                </div>  
+                            </div>
+
+                        </div>
+
+
+                        </div>     
                         
+
+
+
+
                    <!-- dashboard order-->              
                    <div class="dashboard-order">
                     <h3>Order Menu</h3>
