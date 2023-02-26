@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leftover</title>
+
+  <link rel="stylesheet" href="index2.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600&display=swap"
+  rel="stylesheet">
+
+   <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <!-- Swiper CSS -->
+  
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+  
+
+</head>
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+       Leftover<span class="span">.</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-toggle-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#service" class="navbar-link" data-nav-link>Comment ça marche ?</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#sponsors" class="navbar-link" data-nav-link> Nos Partenaires</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#footer" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="btn btn-primary" Onclick="window.location.href = 'signin.html';">S'authentifier</button>
+
+      <button class="nav-toggle-btn" aria-label="open manu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" id="home" data-section
+        style="background-image: url('images/hero-banner.jpg')">
+        <div class="container">
+
+          <p class="hero-subtitle">Ensemble pour </p>
+
+          <h1 class="h1 hero-title">Un monde sans gaspillage alimentaire</h1>
+
+          <p class="hero-text">
+            Découvrez le gaspillage alimentaire dans le monde, ses effets et ses causes.
+          </p>
+
+          <a href="#" class="btn btn-secondary">En savoir plus</a>
+
+        </div>
+      </section>
+
+
+    <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Notre Mission?</p>
+
+            <p class="hero-text">Un tiers de la nourriture mondiale produite pour la consommation humaine est GASPILLÉE.</p>
+            <p class="about-subtitle">NOUS VOULONS CHANGER CELA</p>
+            <p class="section-text">
+              Faire en sorte que les bons aliments soient consommés et non gaspillés. 
+              Chaque jour, des aliments frais et délicieux sont gaspillés dans des cafés, des restaurants,des hôtels, 
+              des magasins et des usines - simplement parce qu'ils n'ont pas été vendus à temps .
+            </p>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="images/Screenshot_120.png" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+ 
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="images/Screenshot_123-removebg-preview.png" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+ 
+          </figure>
+
+        </div>
+      </section>
+
+    
+
+
+
+     <!-- 
+        - #areyouready
+      -->
+
+
+<section class="ready" id="ready" style="background-color: #bea3a3;">
+
+  <h1 class="heading">Faites partie de la solution !</h1>
+
+  <div class="row">
+
+     <div class="video">
+        <video src="images/pexels-kampus-production-6604356.mp4" loop muted autoplay></video>
+     </div>
+
+     <div class="content">
+        <h3> Etes-vous prêt ?</h3>
+        <p>
+          pour faire partie de la communauté et  économiser de la nourriture délicieuse.
+          notre site web vous permet de récupérer des aliments délicieux et invendus 
+          auprès des entreprises pour éviter qu'ils ne soient jetés.</p>
+        <a href="#services" class="btn btn-primary">S'inscrire</a>
+     </div>
+
+  </div>
+  </div>
+
+</section>
+<!-- 
+        - #businessowner
+      -->
+      <section class="pricing" id="pricing">
+        <div class="container">
+
+          <div class="pricing-content">
+
+            <h2 class="pricing-title">Votre entreprise dispose-t-elle d'un surplus de nourriture ?</h2>
+
+            <p class="pricing-text">
+              Nous pouvons vous aider à réduire le gaspillage alimentaire tout 
+              en trouvant de nouveaux clients et en récupérant les coûts irrécupérables.
+            </p>
+
+            <button class="btn btn-secondary">Rejoignez-nous</button>
+
+          </div>
+
+          <div class="grid-gallery">
+            
+            <div class="grid-item">
+              <a href="images/pexels-gary-barnes-6232000.jpg" data-lightbox="gridImage">
+                <img src="images/pexels-gary-barnes-6232000.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/pexels-hussein-haidar-salman-15012786.jpg" data-lightbox="gridImage">
+                <img src="images/pexels-hussein-haidar-salman-15012786.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/pexels-anna-tukhfatullina-food-photographerstylist-2551794.jpg" data-lightbox="gridImage">
+                <img src="images/pexels-anna-tukhfatullina-food-photographerstylist-2551794.jpg" />
+              </a>
+            </div> 
+            <div class="grid-item">
+              <a href="images/cafe.jpg" data-lightbox="gridImage">
+                <img src="images/cafe.jpg" />
+              </a>
+            </div>
+            <div class="grid-item">
+              <a href="images/pexels-lina-kivaka-1524123-removebg-preview.png" data-lightbox="gridImage">
+                <img src="images/pexels-lina-kivaka-1524123-removebg-preview.png" />
+              </a>
+            </div>
+             <div class="grid-item">
+              <a href="images/pexels-shameel-mukkath-5112587.jpg" data-lightbox="gridImage">
+                <img src="images/pexels-shameel-mukkath-5112587.jpg" />
+              </a>
+            </div>
+          </div>
+
+        </div>
+        </section>
+
+        
+       
+     <!-- 
+        - #sponsors
+      -->
+
+<section class="logo-container">
+  <h3>
+    NOS PARTENAIRES            
+   </h3>
+   <br>
+   <br>
+  <div class="swiper logo-slider">
+     <div class="swiper-wrapper">
+        <div class="swiper-slide slide"><img src="images/Screenshot_99-removebg-preview.png" alt=""></div>
+        <div class="swiper-slide slide"><img src="images/Screenshot_98-removebg-preview.png" alt=""></div>
+        <div class="swiper-slide slide"><img src="images/Screenshot_90-removebg-preview.png" alt=""></div>
+        <div class="swiper-slide slide"><img src="images/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png" alt=""></div>
+        <div class="swiper-slide slide"><img src="images/Screenshot_101-removebg-preview.png" alt=""></div>
+        <div class="swiper-slide slide"><img src="images/Screenshot_102-removebg-preview.png" alt=""></div>
+        
+     </div>
+  </div>
+</section>
+<div class="line1"></div>
+
+
+</main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+             Leftover<span class="span">.</span>
+          </a>
+          <p class="footer-text">
+            Nous aidons à rendre le monde meilleur, où la bonne nourriture va aux humains plutôt qu'à la poubelle.
+          </p>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              
+              <span class="span">Accueil</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+            
+              <span class="span">À propos</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+             
+              <span class="span">Comment ça marche ?</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Nos partenaires</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              
+
+              <span class="span">S'authentifier</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Liens Utiles</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+              <span class="span">Conditions de service</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Confidentialité et Politique</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">
+
+              <span class="span">Support</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact Details</p>
+          </li>
+
+          <li class="footer-item">
+          
+            <address class="address">
+              C/54 Northwest Freeway,<br>
+              Suite 558,<br>
+              Houston, USA 485
+              <a href="#" class="address-link"> Voir on Google Map</a>
+            </address>
+          </li>
+
+          <li class="footer-item">
+           
+            <a href="mailto:contact@example.com" class="footer-link">Leftover@example.com</a>
+          </li>
+
+          <li class="footer-item">
+            <a href="tel:+152534468854" class="footer-link">+152 534-468-854</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 Leftover. All Right Reserved by <a href="#" class="copyright-link">GreenPlanet</a>.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+ 
+
+  <script src="index2.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
