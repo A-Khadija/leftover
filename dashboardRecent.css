@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+img{
+    display: block;
+    width: 100%;
+}
+
+
+.profile-photo{
+width: 2.8rem;
+height: 2.8rem;
+border-radius: 50%;
+overflow: hidden;
+}
+.text-muted{
+    color: #76899c;
+}
+
+
+.rightr{
+    margin-top: 1.4rem;
+}
+.rightr .topr{
+display: flex;
+justify-content: center;
+gap: 1rem;
+/* background:url(image/bac10.jpg); */
+background: #fff;
+background-size: cover;
+/* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.288); */
+border-radius: 20PX;
+
+}
+
+.info h3{
+    font-size: 15px;
+	font-weight: 600;
+	color: #342E37;
+    font-size: 'Lato', sans-serif;
+}
+.recent-updates{
+    margin-top: 1rem;
+}
+.rightr .recent-updates h2{
+margin-bottom: 0.8rem;
+
+}
+
+.rightr .recent-updates .updates{
+    background:#F9F9F9;
+    padding: 1.8rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.288);
+    transition: all 300ms ease;
+    margin-left: 10px;
+}
+.rightr .recent-updates .updates:hover{
+    box-shadow: none;
+}
+.rightr .recent-updates .updates .update{
+    display: grid;
+    grid-template-columns: 2.6rem auto;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.recent-updates h2{
+    margin-left: 20px;
+    font-size: 23px;
+	font-weight: 600;
+	color: #342E37;
+    font-size: 'Lato', sans-serif;
+}
+.sales-analytices h2{
+    font-size: 23px;
+	font-weight: 600;
+	color: #342E37;
+    font-size: 'Lato', sans-serif;
+}
+.success{
+    color :#41f1b6;
+}
+.danger{
+   color: #ff7782
+}
+
+/* danfer */
+.rightr .sales-analytices{
+    margin-top: 2rem;
+}
+
+.rightr .sales-analytices h2{
+    margin-bottom: 0.8rem;
+}
+.message p{
+    color: #342E37;
+    font-size:13.5px;
+    font-weight: 500;
+}
+.rightr .sales-analytices .item{
+    background-color:#F9F9F9;
+    display: flex;
+    align-items: center;
+    height: 85px;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem 1.8rem;
+    border-radius:1.2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.288);
+    transition: all 300ms ease;
+}
+
+.rightr .sales-analytices .item:hover{
+    box-shadow: none;
+}
+.rightr .sales-analytices .item .rightr{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0;
+    width: 500%;
+}
+.rightr .sales-analytices .item .icons{
+    padding: 0.6rem;
+    color: #fff;
+    border-radius: 50%;
+    background: #114D4D;
+    display: flex;
+}
+.rightr .sales-analytices .item.offline .icons{
+    background: #c52734;
+}
+.rightr .sales-analytices .item.customers .icons{
+    background:#27b320;
+}
+.rightr .sales-analytices .item.online .icons{
+    background:#3e3ee4;
+}
+.rightr .sales-analytices .add-product{
+    background-color: transparent;
+    border: 2px dashed BLack;
+    color: rgb(201, 193, 193);
+    display : flex ;
+    align-items:center;
+    justify-content:center;
+    background: rgba(0, 0, 0,.4);
+    height: 10px;
+    cursor: pointer;
+}
+
+.rightr .sales-analytices .add-product:hover{
+    background: #114D4D;
+}
+.rightr .sales-analytices .add-product div{
+display: flex;
+align-items: center;
+gap:0.6rem;
+}
+.rightr .sales-analytices .add-product div h3{
+    font-weight: 600;
+}
+.nbr{
+    margin-left: 50px;
+    color: #342E37;
+}
+.text-muted .datevente{
+    margin-top: 9px;
+    color: RED;
+    font-size:14px;
+    font-weight: 600;
+}

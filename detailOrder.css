@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+
+.wrapperp .left{
+  width: 100%;
+  /* background:url(bac6.jpg) no-repeat; */
+  padding: 30px 25px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.wrapperp .left img{
+  border-radius: 5px;
+  margin-bottom: 1px;
+  width: 60px;
+}
+.wrapperp .left h4{
+  margin-bottom: 10px;
+  color: black;
+  font-size:20px ;
+}
+
+.wrapperp .left p{
+  font-size: 15px;
+  color: black;
+}
+
+.wrapperp .right{
+  width: 100%;
+  background: #fff;
+  padding: 30px 25px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.wrapperp .right .info,
+.wrapperp .right .projects{
+  margin-bottom: 25px;
+}
+
+.wrapperp .right .info h3,
+.wrapperp .right .projects h3{
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #212429;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.wrapperp .right .info_data,
+.wrapperp .right .projects_data{
+  display: flex;
+  justify-content: space-between;
+ /* text-align: center; */
+}
+
+.wrapperp .right .info_data .data,
+.wrapperp .right .projects_data .data{
+  width: 100%;
+}
+
+.wrapperp .right .info_data .data h4,
+.wrapperp .right .projects_data .data h4{
+    color: #2c2f38;
+    margin-bottom: 5px;
+}
+
+.wrapperp .right .info_data .data p,
+.wrapperp .right .projects_data .data p{
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #2a2e2e;
+
+}
+
+.wrapperp .social_media ul{
+  display: flex;
+}
+
+.wrapperp .social_media ul li{
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(to right,#01a9ac,#01dbdf);
+  margin-right: 10px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 45px;
+  
+}
+
+.wrapperp .social_media ul li a{
+  color :#fff;
+  display: block;
+  font-size: 18px;
+}
+.data i{
+  color: #fa4c02;
+}
+
