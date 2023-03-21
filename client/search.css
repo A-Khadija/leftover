@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    /*colors*/
+  --blue-green-color-wheel_60: hsla(165, 77%, 17%, 0.6);
+  --blue-green-color-wheel_10: hsla(165, 77%, 17%, 0.1);
+  --blue-green-color-wheel: hsl(159, 87%, 22%);
+  --black-chocolate: hsl(32, 24%, 14%);
+  --spanish-gray: hsl(210, 3%, 62%);
+  --orange-web: hsl(38, 100%, 50%);
+  --davys-gray: hsl(213, 5%, 34%);
+  --light-gray: hsl(0, 0%, 80%);
+  --msu-green: hsl(165, 77%, 15%);
+  --cultured: hsl(30, 22%, 96%);
+  --white_15: hsl(0, 0%, 100%, 0.15);
+  --white: hsl(0, 0%, 100%);
+  --onyx: hsl(210, 10%, 23%);
+  --color-light:hsl(252,30%,95%);
+  --maincolor:#f6f8fa;
+  --darkBlack:#2d2f31;
+  --darkGrey:#61666b;
+  --grey:#d5d5d5;
+  --lightGrey:#f2f2f2;
+--yellow: hsl(51, 100%, 50%);
+--red:#df113c;
+--green:hsla(165, 87%, 44%, 0.9);
+  /*typography*/
+  
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-playfair: 'Playfair Display', serif;
+  
+  --fs-1: 3.6rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2.2rem;
+  --fs-4: 2rem;
+  --fs-5: 1.5rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.3rem;
+  
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+  
+}
+
+.logo {
+    position: fixed;
+    background-color:var(--blue-green-color-wheel);
+    color: var(--cultured);
+    font-size: 30px;
+    width: 100%;
+    padding: 15px 420px  15px 60px;
+    top: 0;
+    line-height: 1;
+    z-index: 2;
+    font-weight: var(--fw-700);
+    font-family:var(--ff-montserrat) ;
+  }
+  
+.logo .span {
+    display: inline-block;
+    color: var(--orange-web);
+    
+   
+}
+
+* {
+margin: 0;
+padding: 0;
+outline: none;
+box-sizing: border-box;
+
+
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    width:100%;
+    height: auto;
+    color:var(--darkBlack);
+    background: var(--color-light);
+}
+.p{
+    font-size:14px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #f5f8ff;
+  }
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  #search-container {
+    margin: 1em 0;
+  }
+  #search-container input {
+    background-color: transparent;
+    width: 40%;
+    border-bottom: 2px solid #110f29;
+    padding: 1em 0.3em;
+  }
+  #search-container input:focus {
+    border-bottom-color: var(--orange-web);
+  }
+  #search-container button {
+    padding: 1em 2em;
+    margin-left: 1em;
+    background-color:hsl(165.6deg 42.43% 60.88%) ;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 0.5em;
+  }
+  .button-value {
+    border: 2px solid rgb(255 255 255 / 77%);
+    padding: 8px 23px;
+    border-radius: 1em;
+    background-color: transparent;
+    color: hsl(0, 0%, 5%);
+    cursor: pointer;
+    background-color: hsl(38deg 75.93% 92.8%);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+ i {
+  border: 2px solid rgba(255, 255, 255, 0.329);
+    padding: 8px 8px 8px 8px;
+    border-radius: 9px;
+    background-color: transparent;
+    color: hsl(0, 0%, 5%);
+    cursor: pointer;
+    background-color: hsl(0, 0%, 88%);
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+    margin-left: 2px;
+
+
+}
+.active {
+  background-color: hsl(165.6deg 42.43% 60.88%);
+  color: hsl(0deg 0% 100%);
+}
+  #products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1.5em;
+    padding: 2em 0;
+  }
+  .card {
+    background-color: #ffffff;
+    max-width: 18em;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  }
+  .image-container {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 15em;
+  }
+  .container {
+    padding-top: 1em;
+    color: #110f29;
+  }
+  .container h5 {
+    font-weight: 500;
+  }
+  .hide {
+    display: none;
+  }
+  @media screen and (max-width: 720px) {
+    img {
+      max-width: 100%;
+      object-fit: contain;
+      height: 10em;
+    }
+    .card {
+      max-width: 10em;
+      margin-top: 1em;
+    }
+    #products {
+      grid-template-columns: auto auto;
+      grid-column-gap: 1em;
+    }
+  }
+  div#search-container {
+    margin-top: 114px;
+}
