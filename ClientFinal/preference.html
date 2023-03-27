@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover">
+    <title>LeftOver</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+<script src="{% static 'network/functions.js' %}"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    	body{margin-top:20px;
+            color:var(--darkBlack);
+    background: var(--color-light);
+
+color:#69707a;
+font-family: 'Poppins', sans-serif;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+    /*colors*/
+  --blue-green-color-wheel_60: hsla(165, 77%, 17%, 0.6);
+  --blue-green-color-wheel_10: hsla(165, 77%, 17%, 0.1);
+  --blue-green-color-wheel: hsl(159, 87%, 22%);
+  --black-chocolate: hsl(32, 24%, 14%);
+  --spanish-gray: hsl(210, 3%, 62%);
+  --orange-web: hsl(38, 100%, 50%);
+  --davys-gray: hsl(213, 5%, 34%);
+  --light-gray: hsl(0, 0%, 80%);
+  --msu-green: hsl(165, 77%, 15%);
+  --cultured: hsl(30, 22%, 96%);
+  --white_15: hsl(0, 0%, 100%, 0.15);
+  --white: hsl(0, 0%, 100%);
+  --onyx: hsl(210, 10%, 23%);
+  --color-light:hsl(252,30%,95%);
+  --maincolor:#f6f8fa;
+  --darkBlack:#2d2f31;
+  --darkGrey:#61666b;
+  --grey:#d5d5d5;
+  --lightGrey:#f2f2f2;
+--yellow: hsl(51, 100%, 50%);
+--red:#df113c;
+--green:hsla(165, 87%, 44%, 0.9);
+  /*typography*/
+  
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-playfair: 'Playfair Display', serif;
+  
+  --fs-1: 3.6rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2.2rem;
+  --fs-4: 2rem;
+  --fs-5: 1.5rem;
+  --fs-6: 1.4rem;
+  --fs-7: 1.3rem;
+  
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-500: 500;
+  
+}
+
+    
+.logo {
+    position: fixed;
+    background-color:var(--blue-green-color-wheel);
+    color: var(--cultured);
+    font-size: 30px;
+    width: 100%;
+    padding: 15px 420px  15px 60px;
+    top: 0;
+    line-height: 1;
+    z-index: 2;
+    font-weight: var(--fw-700);
+    font-family:var(--ff-montserrat) ;
+  }
+  
+.logo .span {
+    display: inline-block;
+    color: var(--orange-web);
+    
+   
+}
+
+* {
+margin: 0;
+padding: 0;
+outline: none;
+box-sizing: border-box;
+
+
+
+}
+nav.nav.nav-borders {
+    padding-top: 43px;
+}
+.p{
+    font-size:14px;
+}
+.img-account-profile {
+    height: 10rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+    font-weight: 500;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+
+.nav-borders .nav-link.active {
+    color:var(--blue-green-color-wheel);
+    border-bottom-color: #ffd37a;
+}
+.nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-danger-soft {
+    color: #000;
+    background-color: #f1e0e3;
+    border-color: #f1e0e3;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container .option_item {
+  display: block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+}
+.container .option_item2 {
+  display: block;
+  position: relative;
+  width: 175px;
+  height: 175px;
+  margin: 10px;
+}
+.container .option_item .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.container .option_item2 .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+}
+.option_item .option_inner {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 58px 40px;
+  cursor: pointer;
+  color: #585c68;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+  border-color: #dddddd;
+  border-width: 3px;
+}
+.option_item2 .option_inner {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  padding: 58px 40px;
+  cursor: pointer;
+  color: #585c68;
+  display: block;
+  border: 5px solid transparent;
+  position: relative;
+  border-color: #dddddd;
+  border-width: 3px;
+  border-radius: 50%;
+}
+.name {
+    width: 87px;
+    margin-top: -13px;
+}
+.option_item .option_inner .icon {
+  margin-bottom: 10px;
+}
+.option_item2 .option_inner .icon {
+  margin-bottom: 10px;
+}
+img.img {
+    width: 158px;
+    height: 136px;
+    margin-top: -61px;
+    align-items: center;
+    margin-left: -35px
+}
+.option_item .option_inner .img {
+  font-size: 32px;
+}
+
+.option_item .option_inner .name {
+  user-select: none;
+}
+
+.option_item .checkbox:checked ~ .option_inner.facebook {
+  border-color: var(--yellow);
+  color: rgb(173, 123, 6);
+}
+
+.option_item .checkbox:checked ~ .option_inner.twitter {
+  border-color: #2be1d2;
+  color: #086361;
+}
+
+.option_item .checkbox:checked ~ .option_inner.instagram {
+  border-color: #0d0aa0;
+  color: #060149;
+}
+
+
+.option_item .option_inner .tickmark {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 20px solid;
+  border-color: #000 transparent transparent #000;
+  display: none;
+}
+
+.option_item .option_inner .tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+}
+
+.option_item .checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.option_item .option_inner.facebook .tickmark {
+  border-color: var(--yellow) transparent transparent var(--yellow);
+}
+
+.option_item .option_inner.twitter .tickmark {
+  border-color: #55acee transparent transparent #55acee;
+}
+
+.option_item .option_inner.instagram .tickmark {
+  border-color: #04207d transparent transparent#04207d;
+}
+
+.option_item .option_inner.linkedin .tickmark {
+  border-color: #0077b5 transparent transparent #0077b5;
+}
+
+
+.form-switch {
+    padding-left: 36.5em;
+    margin-top: -24px;
+}
+.option_item2 .option_inner .img {
+  font-size: 32px;
+}
+
+.option_item2 .option_inner .name {
+  user-select: none;
+}
+
+.option_item2 .checkbox:checked ~ .option_inner.facebook {
+  border-color: rgb(27, 188, 27);
+  color: rgb(6, 99, 28);
+}
+
+.option_item2 .checkbox:checked ~ .option_inner.twitter {
+    border-color: rgb(27, 188, 27);
+  color: rgb(6, 99, 28);
+}
+
+.option_item2 .checkbox:checked ~ .option_inner.instagram {
+    border-color: rgb(27, 188, 27);
+  color: rgb(6, 99, 28);
+}
+
+
+
+
+.option_item2 .option_inner .tickmark {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  border: 20px solid;
+  border-color: #000 transparent transparent #000;
+  display: none;
+}
+
+.option_item2 .option_inner .tickmark:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: -18px;
+  width: 15px;
+  height: 5px;
+  border: 3px solid;
+  border-color: transparent transparent #fff #fff;
+  transform: rotate(-45deg);
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0f5132;
+    border-color: #ffc107;
+    margin: 17px;
+}
+
+.option_item2 .checkbox:checked ~ .option_inner .tickmark {
+  display: block;
+}
+
+.option_item2 .option_inner.facebook .tickmark {
+    border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.twitter .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.instagram .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.linkedin .tickmark {
+  border-color:#ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.whatsapp .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.google .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.reddit .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+
+.option_item2 .option_inner.quora .tickmark {
+  border-color: #ffffff transparent transparent #ffffff;
+}
+span {
+    color: #0f5132;
+    font-family: 'Poppins' sans-serif;
+    font-weight: 600;
+}
+    </style>
+</head>
+<body>
+    <h3 class="logo" onclick="document.location='client.html'">Leftover<span class="span">•</span>
+       
+    </h3>
+<div class="container-xl px-4 mt-4">
+
+<nav class="nav nav-borders">
+    <a class="nav-link " href="file:///C:/Users/hp/Desktop/leftover/profile_details.html" target="__blank">Profile</a>
+    <a class="nav-link" href="file:///C:/Users/hp/Desktop/leftover/profile_security.html" target="__blank">Sécurité</a>
+    <a class="nav-link" href="file:///C:/Users/hp/Desktop/leftover/facturation.html" target="__blank">Facturation</a>
+    <a class="nav-link" href="file:///C:/Users/hp/Desktop/leftover/notification.html" target="__blank">Notififcation</a>
+    <a class="nav-link active ms-0" href="file:///C:/Users/hp/Desktop/leftover/preference.html" target="__blank">Prefrences</a>
+</nav>
+<hr class="mt-0 mb-4">
+<div class="row">
+<div class="col-lg-8">
+
+
+
+    <div class="card card-header-actions mb-4">
+        <div class="card-header">
+            montrer des sacs surprises qui correspondent à vos préférences
+        <div class="form-check form-switch">
+        <input class="form-check-input" id="smsToggleSwitch" type="checkbox" checked="">
+        <label class="form-check-label" for="smsToggleSwitch"></label>
+        </div>
+        </div>
+        <div class="card-body">
+        <form>
+        
+        
+        
+            <div class="container">
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox">
+                  <div class="option_inner facebook">
+                    <div class="tickmark"></div>
+                  <img class="img" src="images/Composition_with_bread_and_rolls_in_wicker_basket_isolated_on_white-removebg-preview.png" alt="">
+                    <div class="name">pain et pâtisseries</div>
+                  </div>
+                </label>
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox" checked>
+                  <div class="option_inner twitter">
+                    <div class="tickmark"></div>
+                    <img class="img" src="images/Indulge_yourself-removebg-preview.png" alt="">
+                    <div class="name">Repas</div>
+                  </div>
+                </label>
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox">
+                  <div class="option_inner instagram">
+                    <div class="tickmark"></div>
+                    <img class="img" src="images/Homemade_Raspberry_Peach_Lemonade-removebg-preview.png" alt="">
+                    <div class="name">café et jus de fruits</div>
+                  </div>
+                </label>
+                
+               
+            </div>
+        </div>
+  </form>
+       
+<div class="card card-header-actions mb-4">
+    <div class="card-header">
+        <span>Type de Paquet</span>
+        
+   
+    </div>
+    <div class="card-body">
+    <form>
+    
+    
+    
+        <div class="container">
+            <label class="option_item2">
+              <input type="checkbox" class="checkbox">
+              <div class="option_inner facebook">
+                <div class="tickmark"></div>
+              <img class="img" src="images/téléchargement-removebg-preview.png" alt="">
+                <div class="name">Sac Standard</div>
+              </div>
+            </label>
+            <label class="option_item2">
+              <input type="checkbox" class="checkbox" checked>
+              <div class="option_inner twitter">
+                <div class="tickmark"></div>
+                <img class="img" src="images/Project_Shopping_Bag_PNG___Du_Shopping__Sac__Sac_PNG_et_vecteur_pour_téléchargement_gratuit-removebg-preview.png" alt="">
+                <div class="name">sac de Chance</div>
+              </div>
+            </label>
+            <label class="option_item2">
+              <input type="checkbox" class="checkbox">
+              <div class="option_inner instagram">
+                <div class="tickmark"></div>
+                <img class="img" src="images/Gift_Shopping_Bag_Vector_PNG_Images__Shopping_Bag_Icon_For_Your_Project__Project_Icons__Shopping_Icons__Bag_Icons_PNG_Image_For_Free_Download-removebg-preview.png" alt="">
+                <div class="name">Sac de Luxe</div>
+              </div>
+            </label>
+           
+
+           </div>
+          </div>
+    </form>
+    </div>
+    <div class="card card-header-actions mb-4">
+        <div class="card-header">
+            <span>temps de récupération</span>
+            
+       
+        </div>
+        <div class="card-body">
+        <form>
+        
+        
+        
+            <div class="container">
+                
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox">
+                  <div class="option_inner facebook">
+                    <div class="tickmark"></div>
+                    <div class="icon"><i class="fa fa-sun"></i></div>
+                    <div class="name">    à midi  14:00-18:00</div>
+                  </div>
+                </label>
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox" checked>
+                  <div class="option_inner twitter">
+                    <div class="tickmark"></div>
+                    <div class="icon"><i class="fa fa-cloud"></i></div>
+                    <div class="name">Après Midi  14:00-18:00</div>
+                  </div>
+                </label>
+                <label class="option_item">
+                  <input type="checkbox" class="checkbox">
+                  <div class="option_inner instagram">
+                    <div class="tickmark"></div>
+                    <div class="icon"><i class="fa fa-moon"></i></div>
+                    <div class="name">    le Soire  14:00-18:00</div>
+                  </div>
+                </label>
+               
+    
+               </div>
+              </div>
+              <button class="btn btn-primary" type="button">appliquer</button>
+        </form>
+        </div>
+</div>
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</body>
+</html>
